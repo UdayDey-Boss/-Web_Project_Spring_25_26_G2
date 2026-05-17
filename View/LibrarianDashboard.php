@@ -18,12 +18,12 @@ $name = $_SESSION["name"] ?? "";
             <legend>Welcome Librarian <?php echo $name; ?></legend>
             <div class="dashboard-links">
                 <a href="librarian/books.php">📚 Book Catalog Management</a><br><br>
+                <a href="librarian/pending_requests.php">⏳ Pending Borrow Requests</a><br><br>
+                <a href="librarian/returns.php">🔄 Process Returns</a><br><br>
                 <a href="../Controller/Logout.php">🚪 Logout</a>
             </div>
         </fieldset>
     </main>
-    <footer>
-        <p>&copy; Library System</p>
-    </footer>
+    <footer><p>&copy; Library System</p></footer>
 </body>
 </html>
