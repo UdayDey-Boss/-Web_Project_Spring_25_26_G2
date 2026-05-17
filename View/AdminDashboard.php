@@ -15,15 +15,13 @@ $name = $_SESSION["name"] ?? "";
     </header>
     <main>
         <fieldset>
-            <legend></legend>
-            <h2 style="text-align:center;">Welcome Admin <?php echo $name; ?></h2>
+            <legend>Welcome Admin <?php echo $name; ?></legend>
             <div class="dashboard-links">
-                <a href="../Controller/Logout.php">Logout</a>
+                <a href="admin/report.php">📊 Borrowing Trends Report</a><br><br>
+                <a href="../Controller/Logout.php">🚪 Logout</a>
             </div>
         </fieldset>
     </main>
-    <footer>
-        <p>@ Library System</p>
-    </footer>
+    <footer><p>&copy; Library System</p></footer>
 </body>
 </html>
