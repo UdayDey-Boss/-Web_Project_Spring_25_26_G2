@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+if (isset($_SESSION["reg_success"]) && $_SESSION["reg_success"] === true) {
+    echo "<script>alert('Registration Successful! Please login.');</script>";
+    unset($_SESSION["reg_success"]);
+}
+
+
 if (isset($_SESSION["member_id"])) {
     $role = $_SESSION["role"];
     if ($role == "member") header("Location: MemberDashboard.php");

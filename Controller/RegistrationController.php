@@ -76,7 +76,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $jsondata = json_encode($tempdata, JSON_PRETTY_PRINT);
         file_put_contents($datafile, $jsondata);
         
-
+         $_SESSION["reg_success"] = true;
+         
         unset($_SESSION["reg_error"]);
         unset($_SESSION["reg_old"]);
         header("Location: ../View/Login.php");
