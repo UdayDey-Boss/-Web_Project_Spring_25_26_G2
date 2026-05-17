@@ -6,7 +6,7 @@ class db {
         $db_password = "";
         $db_name = "library_management_system";
 
-        $connection = new mysqli($db_host, $db_user, $db_password, $db_name, 4306);
+        $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
         if ($connection->connect_error) {
             die("Could not Connect Database: " . $connection->connect_error);
         }
