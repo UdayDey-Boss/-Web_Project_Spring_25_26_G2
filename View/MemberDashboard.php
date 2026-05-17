@@ -15,19 +15,17 @@ $name = $_SESSION["name"] ?? "";
     </header>
     <main>
         <fieldset>
-            <legend></legend>
-            <h2 style="text-align:center;">Welcome <?php echo $name; ?></h2>
+            <legend>Welcome <?php echo $name; ?></legend>
             <p><strong>Active Loans:</strong> 0</p>
             <p><strong>Upcoming Due Dates:</strong> 0</p>
             <p><strong>Outstanding Fines:</strong> 0</p>
             <div class="dashboard-links">
-                <a href="Profile.php">My Profile</a>
-                <a href="../Controller/Logout.php">Logout</a>
+                <a href="Profile.php">👤 My Profile</a><br><br>
+                <a href="member/books.php">📖 Browse & Borrow Books</a><br><br>
+                <a href="../Controller/Logout.php">🚪 Logout</a>
             </div>
         </fieldset>
     </main>
-    <footer>
-        <p>@ Library System</p>
-    </footer>
+    <footer><p>&copy; Library System</p></footer>
 </body>
 </html>
