@@ -81,6 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $database->updateProfile($connection, $id, $name, $email, $phone);
     if ($result) {
         $_SESSION["name"] = $name;
+          $_SESSION["profile_success"] = true;
         unset($_SESSION["profile_error"]);
         unset($_SESSION["profile_old"]);
         header("Location: ../View/Profile.php");
@@ -90,5 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../View/Profile.php");
         exit();
     }
+
+    
 }
 ?>

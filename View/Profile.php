@@ -3,6 +3,10 @@ include "../Controller/auth_check.php";
 auth_check("member");
 include "../Model/db.php";
 
+if (isset($_SESSION["profile_success"]) && $_SESSION["profile_success"] === true) {
+    echo "<script>alert('Profile Updated Successfully!');</script>";
+    unset($_SESSION["profile_success"]);
+}
 $error = $_SESSION["profile_error"] ?? "";
 $old = $_SESSION["profile_old"] ?? array();
 unset($_SESSION["profile_error"]);
