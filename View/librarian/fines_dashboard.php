@@ -10,7 +10,8 @@ $fines = $fineModel->getAllUnpaidFines($search);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fine Management</title>
+    <title>Fine Management</title>  
+    
     <link rel="stylesheet" href="../../Design/style.css">
     <script>
         function markAsPaid(fineId, rowId) {
